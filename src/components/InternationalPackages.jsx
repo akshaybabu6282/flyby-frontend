@@ -2,17 +2,17 @@ import React, { useRef } from 'react'
 import { motion } from 'framer-motion'
 
 const countries = [
-  { name: 'Malaysia', image: '/src/assets/malaysia.avif' },
-  { name: 'Dubai', image: '/src/assets/dubai.avif' },
-  { name: 'Thailand', image: '/src/assets/tailand.webp' },
-  { name: 'Bali', image: '/src/assets/Bali.jpg' },
-  { name: 'Maldives', image: '/src/assets/maidives.jpg' },
-  { name: 'Phuket', image: '/src/assets/phuket.jpg' },
-  { name: 'Azerbaijan', image: '/src/assets/Azerbaijan.webp' },
-  { name: 'Egypt', image: '/src/assets/egypt.jpg' },
-  { name: 'Singapore', image: '/src/assets/Singapore.jpg' },
-  { name: 'Paris', image: '/src/assets/Paris.jpg' },
-  { name: 'Switzerland', image: '/src/assets/Switzerland.jpg' }
+  { name: 'Malaysia', image: '/assets/malaysia.avif' },
+  { name: 'Dubai', image: '/assets/dubai.avif' },
+  { name: 'Thailand', image: '/assets/tailand.webp' },
+  { name: 'Bali', image: '/assets/Bali.jpg' },
+  { name: 'Maldives', image: '/assets/maidives.jpg' },
+  { name: 'Phuket', image: '/assets/phuket.jpg' },
+  { name: 'Azerbaijan', image: '/assets/Azerbaijan.webp' },
+  { name: 'Egypt', image: '/assets/egypt.jpg' },
+  { name: 'Singapore', image: '/assets/Singapore.jpg' },
+  { name: 'Paris', image: '/assets/Paris.jpg' },
+  { name: 'Switzerland', image: '/assets/Switzerland.jpg' }
 ]
 
 const InternationalPackages = () => {

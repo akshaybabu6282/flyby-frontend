@@ -7,59 +7,59 @@ const packages = [
   {
     name: "Kerala Backwaters",
     category: "Family",
-    image: "/src/assets/kerala.webp",
+    image: "/assets/kerala.webp",
   },
   {
     name: "Goa Beach Holiday",
     category: "Honeymoon",
-    image: "/src/assets/goa.png",
+    image: "/assets/goa.png",
   },
   {
     name: "Kashmir Paradise",
     category: "Honeymoon",
-    image: "/src/assets/Manali.jpg",
+    image: "/assets/Manali.jpg",
   },
   {
     name: "Rajasthan Heritage Tour",
     category: "Cultural",
-    image: "/src/assets/Rajasthan.jpeg",
+    image: "/assets/Rajasthan.jpeg",
   },
   {
     name: "Varanasi Spiritual Trip",
     category: "Spiritual",
-    image: "/src/assets/Varanasi.webp",
+    image: "/assets/Varanasi.webp",
   },
   {
     name: "Mumbai",
     category: "Family",
-    image: "/src/assets/mumbai.avif",
+    image: "/assets/mumbai.avif",
   },
     {
     name: "bangalore ",
     category: "Fun and Entertainment",
-    image: "/src/assets/bangalore.jpg",
+    image: "/assets/bangalore.jpg",
   },
    {
     name: "Delhi & Agra ",
     category: "Historical",
-    image: "/src/assets/delhi_agra.webp",
+    image: "/assets/delhi_agra.webp",
   },
   {
     name: "hyderabad",
     category: "Honeymoon",
-    image: "/src/assets/hyderabad.webp",
+    image: "/assets/hyderabad.webp",
   },
     {
     name: "kodaikanal",
-    image: "/src/assets/kodaikanal.jpg",
+    image: "/assets/kodaikanal.jpg",
   },
    {
     name: "Ooty",
-    image: "/src/assets/Ooty.jpg",
+    image: "/assets/Ooty.jpg",
   },
   {
     name: "Mysore",
-    image: "/src/assets/Mysore.webp",
+    image: "/assets/Mysore.webp",
   },
 ]
 

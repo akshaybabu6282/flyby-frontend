@@ -5,47 +5,47 @@ const services = [
     {
         title: 'AIR TICKETS',
         image:
-            '/src/assets/air_ticket.jpg'
+            '/assets/air_ticket.jpg'
     },
     {
         title: 'VISIT VISA',
         image:
-            '/src/assets/visit_visa.avif'
+            '/assets/visit_visa.avif'
     },
     {
         title: 'VISA STAMPING (SAUDI & KUWAIT)',
         image:
-            '/src/assets/visa_stamping.webp'
+            '/assets/visa_stamping.webp'
     },
     {
         title: 'HOTEL & RESORT BOOKING',
         image:
-            '/src/assets/hotels&resorts.jpeg'
+            '/assets/hotels&resorts.jpeg'
     },
     {
         title: 'TOUR PACKAGES',
         image:
-            '/src/assets/tour_packages.jpeg'
+            '/assets/tour_packages.jpeg'
     },
     {
         title: 'STUDY ABROAD (UK)',
         image:
-            '/src/assets/study_abroad.jpg'
+            '/assets/study_abroad.jpg'
     },
     {
         title: 'ATTESTATION',
         image:
-            '/src/assets/ATTESTATION.jpg'
+            '/assets/ATTESTATION.jpg'
     },
     {
         title: 'UMRAH PACKAGE',
         image:
-            '/src/assets/umrah.png'
+            '/assets/umrah.png'
     },
     {
         title: 'PASSPORT SERVICE',
         image:
-            '/src/assets/PASSPORT SERVICE.jpg'
+            '/assets/PASSPORT SERVICE.jpg'
     }
 ]
 

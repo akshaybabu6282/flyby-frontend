@@ -4,19 +4,19 @@ import { motion } from "framer-motion"
 const indiaPackages = [
   {
     name: "Manali",
-    image: "/src/assets/Manali.jpg",
+    image: "/assets/Manali.jpg",
   },
   {
     name: "Delhi & Agra",
-    image: "/src/assets/delhi_agra.webp",
+    image: "/assets/delhi_agra.webp",
   },
   {
     name: "Rajasthan",
-    image: "/src/assets/rajastan.cms",
+    image: "/assets/rajastan.cms",
   },
   {
     name: "Goa",
-    image: "/src/assets/goa.png",
+    image: "/assets/goa.png",
   },
 ]
 
