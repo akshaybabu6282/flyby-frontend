@@ -13,7 +13,7 @@ const Navbar = () => {
       <div className="flex items-center justify-between px-8 py-4 rounded-2xl backdrop-blur-xl bg-white/20 border border-white/30 shadow-xl">
         
         {/* Logo */}
-        <img onClick={() => scrollTo('home')} src="/src/assets/flyby-removebg-preview.png"  loading="lazy" className='h-13 cursor-pointer bg-gray-200 rounded-xl' alt="" />
+        <img onClick={() => scrollTo('home')} src="/assets/flyby-removebg-preview.png"  loading="lazy" className='h-13 cursor-pointer bg-gray-200 rounded-xl' alt="" />
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex gap-10 text-black font-medium">
