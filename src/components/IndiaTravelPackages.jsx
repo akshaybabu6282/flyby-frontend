@@ -1,5 +1,6 @@
 import React from "react"
 import { motion } from "framer-motion"
+import { Link } from "react-router-dom"
 
 const indiaPackages = [
   {
@@ -68,7 +69,7 @@ const IndiaPackages = () => {
               <img
                 src={item.image}
                 alt={item.name}
-                 loading="lazy"
+                loading="lazy"
                 className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
               />
 
@@ -101,15 +102,20 @@ const IndiaPackages = () => {
             Looking for more destinations or a fully customized trip?
           </motion.p>
 
-          <motion.a
-            href="/india-packages"
-            className="inline-block px-12 py-4 rounded-full bg-blue-700 hover:bg-blue-800 text-white text-lg font-semibold shadow-lg transition"
+          
+
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            View All India Packages
-          </motion.a>
+            <Link
+              to="/india-packages"
+              className="inline-block px-12 py-4 rounded-full bg-blue-700 hover:bg-blue-800 text-white text-lg font-semibold shadow-lg transition"
+            >
+              View All India Packages
+            </Link>
+          </motion.div>
         </div>
       </div>
     </section>
