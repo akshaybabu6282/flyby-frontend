@@ -48,20 +48,26 @@
   <!-- Structured Data -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "TravelAgency",
-    "name": "FlyBy Tours & Travels",
-    "url": "https://www.flybytoursandtravels.in/",
-    "logo": "https://www.flybytoursandtravels.in/assets/flyby-removebg-preview.png",
-    "description": "Travel agency in Wayanad offering international tours, India packages, air ticket booking, visa services, hotel booking, Umrah packages and study abroad UK services.",
-    "telephone": "+91 73049 91052",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Mananthavady",
-      "addressRegion": "Kerala",
-      "addressCountry": "IN"
-    },
-    "areaServed": "India",
+  "@context": "https://schema.org",
+  "@type": "TravelAgency",
+  "@id": "https://www.flybytoursandtravels.in/#travelagency",
+  "name": "FlyBy Tours & Travels",
+  "url": "https://www.flybytoursandtravels.in/",
+  "logo": "https://www.flybytoursandtravels.in/assets/flyby-removebg-preview.png",
+  "description": "Travel agency in Wayanad offering international tours, India packages, air ticket booking, visa services, hotel booking, Umrah packages and study abroad UK services.",
+  "telephone": "+91 73049 91052",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Mysore Road",
+    "addressLocality": "Mananthavady",
+    "addressRegion": "Kerala",
+    "postalCode": "670645",
+    "addressCountry": "IN"
+  },
+  "areaServed": {
+    "@type": "Place",
+    "name": "India"
+  },
     "sameAs": [
       "https://www.instagram.com/flyby.travels?igsh=enFoNzFtMG9teTkw&utm_source=qr",
       "https://www.facebook.com/share/1FH7oVVtus/?mibextid=wwXIfr"
@@ -69,7 +75,7 @@
   }
   </script>
 
-  <!-- Google Analytics (optional now, recommended) -->
+  <!-- Google Analytics  -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-7LGC67M6P1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
