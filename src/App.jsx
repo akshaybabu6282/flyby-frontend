@@ -4,13 +4,15 @@ import "./App.css";
 
 import Home from "./pages/Home";
 import IndiaPackagesPage from "./pages/IndiaPackagesPage";
+import IndiaDestinationPage from "./pages/IndiaDestinationPage";
 import ServicePage from "./pages/ServicePage";
 import VehicleServicesPage from "./pages/VehicleServicesPage";
+import InternationalDestinationPage from "./pages/InternationalDestinationPage";
 import DataProtectionPage from "./pages/DataProtectionPage";
 import TermsAndConditions from "./pages/TermsAndConditions";
 import CancellationRefundPolicy from "./pages/CancellationRefundPolicy";
-import WhatsAppButton from "./components/WhatsAppButton";
 import NotFoundPage from "./pages/NotFoundPage";
+import WhatsAppButton from "./components/WhatsAppButton";
 
 const App = () => {
   return (
@@ -21,6 +23,16 @@ const App = () => {
         <Route
           path="/india-packages"
           element={<IndiaPackagesPage />}
+        />
+
+        <Route
+          path="/india/:slug"
+          element={<IndiaDestinationPage />}
+        />
+
+        <Route
+          path="/international/:slug"
+          element={<InternationalDestinationPage />}
         />
 
         <Route

@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import SEO from "../components/SEO";
 import {
   ArrowLeft,
   Bus,
@@ -190,6 +191,12 @@ const VehicleServicesPage = () => {
 
   return (
     <>
+      <SEO
+        title="Taxi and Vehicle Services in Wayanad"
+        description="Book taxi, cab, traveller and bus services from FlyBy Tours & Travels in Mananthavady, Wayanad. Enquire about airport transfers, local travel, outstation trips and group transportation."
+        path="/taxi-services"
+      />
+      
       <Navbar />
 
       <main className="overflow-hidden bg-slate-50 text-slate-900">

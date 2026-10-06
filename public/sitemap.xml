@@ -1,9 +1,199 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+>
   <url>
     <loc>https://www.flybytoursandtravels.in/</loc>
+    <priority>1.0</priority>
   </url>
+
   <url>
     <loc>https://www.flybytoursandtravels.in/india-packages</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.flybytoursandtravels.in/taxi-services</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.flybytoursandtravels.in/services/air-ticket-booking</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.flybytoursandtravels.in/services/visit-visa-services</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.flybytoursandtravels.in/services/visa-stamping-saudi-kuwait</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.flybytoursandtravels.in/services/hotel-resort-booking</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.flybytoursandtravels.in/services/tour-packages</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.flybytoursandtravels.in/services/study-abroad-uk</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.flybytoursandtravels.in/services/certificate-attestation</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.flybytoursandtravels.in/services/umrah-packages</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.flybytoursandtravels.in/services/passport-services</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.flybytoursandtravels.in/international/malaysia</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.flybytoursandtravels.in/international/dubai</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.flybytoursandtravels.in/international/thailand</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.flybytoursandtravels.in/international/bali</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.flybytoursandtravels.in/international/maldives</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.flybytoursandtravels.in/international/phuket</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.flybytoursandtravels.in/international/azerbaijan</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.flybytoursandtravels.in/international/egypt</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.flybytoursandtravels.in/international/singapore</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.flybytoursandtravels.in/international/paris</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.flybytoursandtravels.in/international/switzerland</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.flybytoursandtravels.in/india/manali</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.flybytoursandtravels.in/india/kerala-backwaters</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.flybytoursandtravels.in/india/goa</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.flybytoursandtravels.in/india/kashmir</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.flybytoursandtravels.in/india/rajasthan</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.flybytoursandtravels.in/india/varanasi</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.flybytoursandtravels.in/india/mumbai</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.flybytoursandtravels.in/india/bengaluru</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.flybytoursandtravels.in/india/delhi-agra</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.flybytoursandtravels.in/india/hyderabad</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.flybytoursandtravels.in/india/kodaikanal</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.flybytoursandtravels.in/india/ooty</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.flybytoursandtravels.in/india/mysore</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.flybytoursandtravels.in/privacy-policy</loc>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://www.flybytoursandtravels.in/terms-and-conditions</loc>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://www.flybytoursandtravels.in/cancellation-and-refund-policy</loc>
+    <priority>0.3</priority>
   </url>
 </urlset>

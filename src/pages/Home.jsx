@@ -13,10 +13,16 @@ import FAQ from "../components/FAQ";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import GoogleReviews from "../components/GoogleReviews";
+import SEO from "../components/SEO";
 
 const Home = () => {
   return (
     <>
+      <SEO
+        title="FlyBy Tours & Travels | Travel, Visa and Tour Services in Wayanad"
+        description="FlyBy Tours & Travels in Mananthavady, Wayanad provides flight bookings, visa services, international and India tour packages, hotel bookings, taxi services and UK study abroad guidance."
+        path="/"
+      />
       <Navbar />
 
       <main>

@@ -1,125 +1,121 @@
-import React from "react"
-import { motion } from "framer-motion"
-import { Link } from "react-router-dom"
+import React from "react";
+import { motion, useReducedMotion } from "framer-motion";
+import { Link } from "react-router-dom";
+import { ArrowRight, ArrowUpRight } from "lucide-react";
 
-const indiaPackages = [
-  {
-    name: "Manali",
-    image: "/assets/Manali.jpg",
-  },
-  {
-    name: "Delhi & Agra",
-    image: "/assets/delhi_agra.webp",
-  },
-  {
-    name: "Rajasthan",
-    image: "/assets/rajastan.cms",
-  },
-  {
-    name: "Goa",
-    image: "/assets/goa.png",
-  },
-]
+import { featuredIndiaDestinations } from "../data/indiaDestinations";
 
-const IndiaPackages = () => {
+const IndiaTravelPackages = () => {
+  const reduceMotion = useReducedMotion();
+
   return (
     <section
       id="india-packages"
-      className="relative py-28 px-6 bg-gradient-to-t from-blue-200 to-white overflow-hidden"
+      aria-labelledby="india-packages-heading"
+      className="relative overflow-hidden bg-gradient-to-t from-blue-200 to-white px-6 py-20 sm:py-28"
     >
-      {/* Animated background graphics */}
       <motion.div
-        className="absolute top-[-100px] left-[-150px] w-[300px] h-[300px] bg-blue-200/30 rounded-full blur-3xl"
-        animate={{ x: [0, 50, 0], y: [0, 30, 0] }}
+        aria-hidden="true"
+        className="pointer-events-none absolute -left-[150px] -top-[100px] h-[300px] w-[300px] rounded-full bg-blue-200/30 blur-3xl"
+        animate={
+          reduceMotion ? undefined : { x: [0, 50, 0], y: [0, 30, 0] }
+        }
         transition={{ duration: 12, repeat: Infinity }}
       />
+
       <motion.div
-        className="absolute bottom-[-150px] right-[-100px] w-[400px] h-[400px] bg-blue-300/20 rounded-full blur-3xl"
-        animate={{ x: [0, -60, 0], y: [0, -40, 0] }}
+        aria-hidden="true"
+        className="pointer-events-none absolute -bottom-[150px] -right-[100px] h-[400px] w-[400px] rounded-full bg-blue-300/20 blur-3xl"
+        animate={
+          reduceMotion ? undefined : { x: [0, -60, 0], y: [0, -40, 0] }
+        }
         transition={{ duration: 15, repeat: Infinity }}
       />
+
       <motion.div
-        className="absolute top-[25%] right-[10%] w-[200px] h-[200px] bg-blue-300/25 rounded-full blur-2xl"
-        animate={{ y: [0, -25, 0] }}
+        aria-hidden="true"
+        className="pointer-events-none absolute right-[10%] top-[25%] h-[200px] w-[200px] rounded-full bg-blue-300/25 blur-2xl"
+        animate={reduceMotion ? undefined : { y: [0, -25, 0] }}
         transition={{ duration: 10, repeat: Infinity }}
       />
 
-      <div className="relative max-w-7xl mx-auto z-10">
-        <h3 className="text-4xl md:text-5xl font-bold text-center text-blue-700 mb-6">
+      <div className="relative z-10 mx-auto max-w-7xl">
+        <h2
+          id="india-packages-heading"
+          className="mb-6 text-center text-4xl font-bold text-blue-700 md:text-5xl"
+        >
           Travel Across India
-        </h3>
+        </h2>
 
-        <p className="text-center text-lg text-blue-900 max-w-3xl mx-auto mb-16">
-          Handpicked destinations and custom travel experiences across India.
-          Family trips, honeymoons, group tours, and spiritual journeys.
+        <p className="mx-auto mb-12 max-w-3xl text-center text-lg leading-8 text-blue-900 sm:mb-16">
+          Explore destinations for your next India holiday. Share your dates,
+          interests and budget with FlyBy to discuss suitable travel options.
         </p>
 
-        {/* Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
-          {indiaPackages.map((item, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 30 }}
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+          {featuredIndiaDestinations.map((destination, index) => (
+            <motion.article
+              key={destination.slug}
+              initial={reduceMotion ? false : { opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              whileHover={{ scale: 1.05, y: -5 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="relative h-[420px] rounded-2xl overflow-hidden shadow-2xl group"
+              viewport={{ once: true, amount: 0.15 }}
+              whileHover={reduceMotion ? undefined : { y: -5 }}
+              transition={{
+                duration: reduceMotion ? 0 : 0.5,
+                delay: reduceMotion ? 0 : index * 0.08,
+              }}
+              className="group relative h-[420px] overflow-hidden rounded-2xl shadow-xl"
             >
               <img
-                src={item.image}
-                alt={item.name}
+                src={destination.homeImage || destination.image}
+                alt={`${destination.name} destination`}
                 loading="lazy"
-                className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+                className="h-full w-full object-cover transition-transform duration-500 motion-safe:group-hover:scale-105"
               />
 
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+              <div
+                aria-hidden="true"
+                className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent"
+              />
 
               <div className="absolute bottom-6 left-6 right-6 text-white">
-                <h4 className="text-2xl font-bold mb-4 drop-shadow-lg">
-                  {item.name}
-                </h4>
+                <h3 className="mb-3 text-2xl font-bold">
+                  {destination.name}
+                </h3>
 
-                <a
-                  href={`https://wa.me/917304991052?text=I%20want%20details%20about%20${item.name}%20travel%20package`}
-                  className="inline-block bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-full font-medium transition shadow-md"
+                <p className="mb-5 text-sm leading-6 text-white/90">
+                  {destination.tagline}
+                </p>
+
+                <Link
+                  to={`/india/${destination.slug}`}
+                  aria-label={`View ${destination.name} destination`}
+                  className="inline-flex items-center gap-2 rounded-full bg-blue-600 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-blue-700 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
                 >
-                  Get Details
-                </a>
+                  View Destination
+                  <ArrowUpRight size={17} aria-hidden="true" />
+                </Link>
               </div>
-            </motion.div>
+            </motion.article>
           ))}
         </div>
 
-        {/* CTA */}
-        <div className="text-center mt-20">
-          <motion.p
-            className="text-blue-800 mb-6 text-lg"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            Looking for more destinations or a fully customized trip?
-          </motion.p>
+        <div className="mt-14 text-center sm:mt-20">
+          <p className="mb-6 text-lg leading-7 text-blue-800">
+            Looking for more destinations for your next trip?
+          </p>
 
-          
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+          <Link
+            to="/india-packages"
+            className="inline-flex items-center justify-center gap-2 rounded-full bg-blue-700 px-8 py-4 text-base font-semibold text-white shadow-lg transition-colors hover:bg-blue-800 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-700"
           >
-            <Link
-              to="/india-packages"
-              className="inline-block px-12 py-4 rounded-full bg-blue-700 hover:bg-blue-800 text-white text-lg font-semibold shadow-lg transition"
-            >
-              View All India Packages
-            </Link>
-          </motion.div>
+            View All India Destinations
+            <ArrowRight size={18} aria-hidden="true" />
+          </Link>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default IndiaPackages
+export default IndiaTravelPackages;

@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { Link, Navigate, useParams } from "react-router-dom";
+import SEO from "../components/SEO";
 import {
   ArrowLeft,
   CheckCircle2,
@@ -23,6 +24,15 @@ const updateMetaTag = (selector, attribute, value) => {
 
 const ServicePage = () => {
   const { slug } = useParams();
+
+  const serviceName = slug
+    .split("-")
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ");
+
+  const seoTitle = `${serviceName} in Wayanad`;
+
+  const seoDescription = `Get reliable ${serviceName.toLowerCase()} support from FlyBy Tours & Travels in Mananthavady, Wayanad. Contact our team for travel guidance, documentation support and booking information.`;
 
   const service = getServiceBySlug(slug);
 
@@ -89,6 +99,13 @@ const ServicePage = () => {
 
   return (
     <>
+
+      <SEO
+        title={`${seoTitle} | FlyBy Tours & Travels`}
+        description={seoDescription}
+        path={`/services/${slug}`}
+      />
+      
       <Navbar />
 
       <main className="bg-slate-50 text-slate-900">
